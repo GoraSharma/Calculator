@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculator</title>
+ 
+</head>
+<body>
+    <script src="script.js"></script>
+    <div class="container">
+        <div class="calculator">
+        <!-- <h2>CALCULATOR</h2> -->
+        <div class=" input-data">
+            <input id="input-box" type="text" placeholder="0">
+        </div>
+        <div class="wrapper">
+          
+            <div class="grid-data function-keys"><button onclick="clearScreen()">C</button></div>
+            <div class="grid-data function-keys"><button>AC</button></div>
+            <div class="grid-data function-keys"><button>%</button></div>
+            <div class="grid-data function-keys"><button  onclick="sendDigit('/')" class="right">÷</button></div>
+          
+            <div class="grid-data"><button  onclick="sendDigit('7')">7</button></div>
+            <div class="grid-data"><button  onclick="sendDigit('8')">8</button></div>
+            <div class="grid-data"><button  onclick="sendDigit('9')">9</button></div>
+            <div class="grid-data"><button  onclick="sendDigit('*')" class="right">×</button></div>
+
+            <div class="grid-data"><button  onclick="sendDigit('4')">4</button></div>
+            <div class="grid-data"><button  onclick="sendDigit('5')">5</button></div>
+            <div class="grid-data"><button  onclick="sendDigit('6')">6</button></div>
+            <div class="grid-data"><button  onclick="sendDigit('-')" class="right">-</button></div>
+
+            <div class="grid-data"><button  onclick="sendDigit('1')">1</button></div>
+            <div class="grid-data"><button  onclick="sendDigit('2')">2</button></div>
+            <div class="grid-data"><button  onclick="sendDigit('3')">3</button></div>
+            <div class="grid-data"><button  onclick="sendDigit('+')" class="right">+</button></div>
+
+            <div class="grid-data zero-value"><button   onclick="sendDigit('0')">0</button></div>
+            <div class="grid-data"><button  onclick="sendDigit('.')">.</button></div>
+            <div class="grid-data"><button onclick="equalTo()" class="right">=</button></div>
+
+        </div>
+    </div>
+    </div>
+    
+</body>
+</html>
